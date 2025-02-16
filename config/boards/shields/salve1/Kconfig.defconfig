@@ -1,0 +1,16 @@
+if SHIELD_SALVE1_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Salve1"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SALVE1_LEFT || SHIELD_SALVE1_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
